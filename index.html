@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Technical Documentation Project</title>
 </head>
 
@@ -10,22 +11,22 @@
 
 
 <body>
-    <!-- navbar section -->
+    <!-- NAVBAR SECTION -->
     <nav id="navbar">
         <header>description of the technical documentation here</header>
         <!-- make a local link for every element with the class "main-section" for local DOM navigation-->
         <a href="" class="nav-link">Introduction</a>
-        <a href="" class="nav-link">what the problem is</a>
         <a href="" class="nav-link">iframe</a>
         <a href="" class="nav-link">containers</a>
         <a href="" class="nav-link">solution</a>
         <a href="" class="nav-link">summary</a>
     </nav>
     <!-- this is the start of the main page -->
-    <!-- i'm adding a ton of code, li, and p tags to each section, just as a sort of boilerplate. obviously i won't plan on using all that in each section -->
+    <!-- i'm adding a ton of: code, li, and p tags to each section, just as a sort of boilerplate. obviously i won't plan on using all that in each section -->
     <main id="main-doc">
-        <section class="main-section" id="corrisponds with topic section">
-            <h1></h1>
+        <!-- 1ST SECTION -->
+        <section class="main-section" id="Introduction_to_video">
+            <h1>Introduction</h1>
             <code></code>
             <code></code>
             <code></code>
@@ -36,8 +37,9 @@
             <li></li>
             <li></li>
             <li></li>
-            <p></p>
-            <p></p>
+            <p>This is to teach how to apply video in your code.</p>
+            <p>there are many ways to add video in your page, this lesson will be showing you the way by which you can
+                add video to your page and make it relative to the size of the webpage</p>
             <p></p>
             <p></p>
             <p></p>
@@ -47,8 +49,9 @@
             <p></p>
             <p></p>
         </section>
-        <section class="main-section" id="corrisponds with topic section">
-            <h1></h1>
+        <!-- 2ND SECTION -->
+        <section class="main-section" id="What_are_iframes">
+            <h1>Iframe</h1>
             <code></code>
             <code></code>
             <code></code>
@@ -59,9 +62,38 @@
             <li></li>
             <li></li>
             <li></li>
+            <p>what are<code></code> iframe <code></code>tags and what are their purpose?</p>
+            <p>think of iframe tags as a window to another webpage, but only the content that you want to use</p>
+            <p>things that are in iframes on your page are just showing things from another webiste that you wanted to
+                grab it from and only appending it to your webpage</p>
+            <p>when adding a video to a webpate with an iframe, it's going to want to display in a very odd way and mess
+                things up and you know, make things frustrating.</p>
+            <p>which is where containers are going to come in handy</p>
             <p></p>
             <p></p>
             <p></p>
+            <p></p>
+            <p></p>
+        </section>
+        <!-- 3RD SECTION -->
+        <section class="main-section" id="What_are_containers">
+            <h1>Containers</h1>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <p>hello, welcome to the container section my dude.</p>
+            <p>when you make a website, you add your content you want to the site and then when your wanting it to look
+                you know, exciting and cool. containers will come in handy it's like MS Word but for websites...that's a
+                bad example. </p>
+            <p>containers are really good at allowing you to style your content by centering it, adding margins and
+                shifting text or other content like pictures and video.</p>
             <p></p>
             <p></p>
             <p></p>
@@ -70,22 +102,42 @@
             <p></p>
             <p></p>
         </section>
-        <section class="main-section" id="corrisponds with topic section">
-            <h1></h1>
+        <!-- 4TH SECTION -->
+        <section class="main-section" id="solution_to_adding_video">
+            <h1>Solution</h1>
             <code></code>
             <code></code>
-            <code></code>
-            <code></code>            
-            <code></code>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>the problem is that when adding video to a page, it looks really bad, and stying the iframe itself is
+                hard in CSS, so were going to add the iframe in a containerand it's going to act like Inception the
+                movie but in code. ;)</p>
+            <p>example 1, adding the video in an iframe and that, in it's own container in HTML ok?</p>
+            <!-- video copied from youtube with it's own iframe -->
+            <code> iframe width="560" height="315" src="https://www.youtube.com/embed/Hm3JodBR-vs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen> /iframe>
+            </code>
+
+            <!-- CSS code for iframe -->
+            <p>here is what the CSS portion of example 1 looks like. it's targeting the iframe or class of that container</p>
+            <code>.videoWrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                }</code>
+            <p>here is what the parent container looks like. notice that it's targeting the container as a whole, but not the class</p>
+            <code>.videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 */
+                padding-top: 25px;
+                height: 0;
+                }</code>
             <p></p>
             <p></p>
             <p></p>
@@ -93,44 +145,20 @@
             <p></p>
             <p></p>
         </section>
-        <section class="main-section" id="corrisponds with topic section">
-            <h1></h1>
+        <!-- 5TH SECTION -->
+        <section class="main-section" id="summary_wrap_up">
+            <h1>Summary</h1>
             <code></code>
             <code></code>
             <code></code>
             <code></code>
             <code></code>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-        </section>
-        <section class="main-section" id="corrisponds with topic section">
-            <h1></h1>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>what we covered</p>
+            <li>iframes</li>
+            <li>containers</li>
+            <li>how iframes can be displayed properly</li>
+            <p>we went over what iframe tags and what they generally do in that they help us see content linked to our sweet page from other cool web pages</p>
+            <p>containers and how they are pretty useful with making our content look like it didn't come from the 1990's, so that's nice. </p>
             <p></p>
             <p></p>
             <p></p>

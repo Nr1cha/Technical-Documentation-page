@@ -1,11 +1,17 @@
 /* 
 to the left side of the screen
 always visible
- */
-#navbar {
 
+ */
+.navbar {
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 /* have media query for screen contrast for handheld devices */
 @media (){
 
+}
+code {
+    background-color: rgb(204, 204, 204);
 }
