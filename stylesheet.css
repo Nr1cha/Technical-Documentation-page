@@ -3,15 +3,33 @@ to the left side of the screen
 always visible
 
  */
-.navbar {
-list-style-type: none;
-margin: 0;
-padding: 0;
+#navbar {
+    width: 7%;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+#navbar > a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #555555;
+    display: block;
+    border: #333333
+}
+.main-section {
+    margin-left: 180px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
 }
 /* have media query for screen contrast for handheld devices */
-@media (){
+/* @media (){
 
-}
+} */
 code {
     background-color: rgb(204, 204, 204);
 }
