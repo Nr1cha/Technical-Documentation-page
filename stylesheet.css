@@ -21,11 +21,17 @@ always visible
 }
 #navbar > a {
     display: block;
-    padding: 6px 0px;
+    padding: 6px 1px;
+    padding-left: 15px;
     font-size: 25px;
     color: #555555;
     text-decoration: none;
-    border: #333333
+
+}
+#navbar>header{
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 5px;
 }
 .main-section {
     margin-left: 205px; /* Same width as the sidebar + left position in px */
@@ -40,6 +46,7 @@ code {
     margin-left: 1em;
     display: block;
     background-color: #f1f1f1;
+    position: static;
 }
 li {
     margin-left: 1em;
