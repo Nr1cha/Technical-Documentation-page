@@ -1,19 +1,17 @@
-/* 
-to the left side of the screen
-always visible
-
-*/
 #summary_wrap_up {
     /* color: blue; */
     margin-bottom: 12em;
 }
+
 h1 {
     color: #353535
- }
- p {
-     color: #7c7c7c;
-     display: block;
- }
+}
+
+p {
+    color: #7c7c7c;
+    display: block;
+}
+
 #navbar {
     margin: 0;
     padding: 0;
@@ -23,7 +21,8 @@ h1 {
     overflow: auto;
     background: #eee;
 }
-#navbar > a {
+
+#navbar>a {
     display: block;
     padding: 6px 1px;
     padding-left: 15px;
@@ -34,18 +33,22 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 
 }
-#navbar>header{
+
+#navbar>header {
     text-align: center;
     font-size: 1.2em;
     padding-top: 5px;
 }
+
 .main-section {
     margin-left: 205px;
-    font-size: 28px; 
+    font-size: 28px;
     padding: 0px 10px;
-    font-family: 'Cutive Mono', monospace;
     /* font-family: 'Libre Barcode 39', cursive; */
+    /* font-family: 'Libre Barcode 39', cursive; */
+    font-family: 'Gruppo', cursive;
 }
+
 /* have media query for screen contrast for handheld devices */
 /* @media (){
 
@@ -56,6 +59,13 @@ code {
     background-color: #f1f1f1;
     position: static;
 }
+
+#What_are_iframes>p:nth-child(2)>code {
+    color: blue;
+    display: inline-block;
+    margin-left: 0;
+}
+
 li {
     margin-left: 1em;
 }
