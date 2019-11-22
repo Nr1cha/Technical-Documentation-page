@@ -60,11 +60,12 @@ code {
     position: static;
 }
 
-#What_are_iframes>p:nth-child(2)>code {
-    color: blue;
+#What_are_iframes > code {
     display: inline-block;
-    margin-left: 0;
-}
+    }
+#What_are_containers > code {
+    display: inline-block;
+    }
 
 li {
     margin-left: 1em;
