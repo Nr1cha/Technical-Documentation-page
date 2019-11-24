@@ -45,14 +45,18 @@ p {
     font-size: 28px;
     padding: 0px 10px;
     /* font-family: 'Libre Barcode 39', cursive; */
-    /* font-family: 'Libre Barcode 39', cursive; */
     font-family: 'Gruppo', cursive;
 }
 
-/* have media query for screen contrast for handheld devices */
-/* @media (){
+@media (min-width: 800px) {
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        #navbar>a {
+            font-family: 'Libre Barcode 39', cursive;
+        }
+}
 
-} */
 code {
     margin-left: 1em;
     display: block;
@@ -60,12 +64,13 @@ code {
     position: static;
 }
 
-#What_are_iframes > code {
+#What_are_iframes>code {
     display: inline-block;
-    }
-#What_are_containers > code {
+}
+
+#What_are_containers>code {
     display: inline-block;
-    }
+}
 
 li {
     margin-left: 1em;
